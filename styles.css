@@ -1,3 +1,8 @@
+:root {
+    --deep: #630000;
+    --light: #bb0000;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +12,34 @@
 html {
     scroll-behavior: smooth;
 }
-
+.logo{
+    height: 10%;
+    width: 10%;
+    width: fit-content;
+}
 body {
-    font-family: "Graduate", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     overflow-x: hidden;
   }
 
-header {
+  header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    height: 12.5vh;
+    background-color: transparent;
     color: #fff;
     padding: 20px;
     text-align: center;
+    vertical-align: middle;
     z-index: 9999;
+    transition: 1s ease;
+    font-family: "Graduate", "Roboto", Arial;
+  }
+  
+  .header-scroll {
+    background-color: var(--deep);
   }
 
 nav {
@@ -91,7 +108,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
     overflow: auto;
   }
 
@@ -100,6 +117,7 @@ section {
     margin-bottom: 40px;
     padding: 20px;
     width: 70%;
+    padding-top: 20vh;
   }
 
 .home-section {
@@ -122,6 +140,56 @@ section h1 {
 
 section p {
     font-size: 18px;
+}
+
+#about p{
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+.aboutcontent{
+    display: flex;
+}
+
+.aboutcontent .image-carousel {
+    width: 300rem;
+    border: 3px solid var(--light);
+    /* height: 300px; */
+    overflow: hidden;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+.aboutcontent .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: 1.5s ease;
+  }
+  
+.aboutcontent .carousel-image.active {
+    opacity: 1;
+  }
+
+.chairmancontent{
+    display: flex;
+}
+
+.chairmancontent img {
+    width: 300rem;
+    border: 3px solid var(--light);
+    /* height: 300px; */
+    overflow: hidden;
+    position: relative;
+    margin-left: 30px;
+}
+
+#chairman p{
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    font-style: italic;
 }
 
 .full-height-section {
