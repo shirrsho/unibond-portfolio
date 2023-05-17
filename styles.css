@@ -12,11 +12,12 @@
 html {
     scroll-behavior: smooth;
 }
-.logo{
-    height: 10%;
-    width: 10%;
-    width: fit-content;
-}
+
+/* .logo{
+    height: 10vh;
+    width: 10vh;
+} */
+
 body {
     font-family: "Roboto", Arial, sans-serif;
     overflow-x: hidden;
@@ -30,7 +31,7 @@ body {
     height: 12.5vh;
     background-color: transparent;
     color: #fff;
-    padding: 20px;
+    padding: 1vw;
     text-align: center;
     vertical-align: middle;
     z-index: 9999;
@@ -51,13 +52,14 @@ nav {
 }
 
 .nav-links {
+    font-size: 2.2vh;
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-right: 3vh;
 }
 
 .nav-links a {
@@ -114,8 +116,8 @@ main {
 
 section {
     text-align: left;
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 3vh;
+    padding: 2vh;
     width: 70%;
     padding-top: 20vh;
   }
@@ -134,17 +136,17 @@ section {
 
 section h1 {
     font-family: "Graduate", Arial, sans-serif;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 3.2vh;
+    margin-bottom: 3vh;
 }
 
 section p {
-    font-size: 18px;
+    font-size: 2.2vh;
 }
 
 #about p{
-    letter-spacing: 0.1rem;
-    line-height: 2rem;
+    letter-spacing: 0.1vh;
+    line-height: 5vh;
 }
 
 .aboutcontent{
@@ -152,12 +154,12 @@ section p {
 }
 
 .aboutcontent .image-carousel {
-    width: 300rem;
-    border: 3px solid var(--light);
+    width: 500vh;
+    border: 0.4vh solid var(--light);
     /* height: 300px; */
     overflow: hidden;
     position: relative;
-    margin-left: 30px;
+    margin-left: 3vh;
   }
   
 .aboutcontent .carousel-image {
@@ -178,17 +180,17 @@ section p {
 }
 
 .chairmancontent img {
-    width: 300rem;
-    border: 3px solid var(--light);
+    width: 700vh;
+    border: 0.4vh solid var(--light);
     /* height: 300px; */
     overflow: hidden;
     position: relative;
-    margin-left: 30px;
+    margin-left: 3vh;
 }
 
 #chairman p{
-    letter-spacing: 0.05rem;
-    line-height: 2rem;
+    letter-spacing: 0.1vh;
+    line-height: 5vh;
     font-style: italic;
 }
 
