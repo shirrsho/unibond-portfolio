@@ -20,12 +20,23 @@ setInterval(showNextImage, 3000);
 
 const navSlide = () => {
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
+  const navlinks = document.querySelector('.nav-links');
+  const nav = document.querySelector('nav');
+  const header = document.querySelector('header');
 
   burger.addEventListener('click', () => {
+    navlinks.classList.toggle('active');
     nav.classList.toggle('active');
+    header.classList.toggle('active');
     burger.classList.toggle('toggle');
   });
+
+  navlinks.addEventListener('click', () => {
+    navlinks.classList.remove('active');
+    nav.classList.remove('active');
+    header.classList.remove('active');
+    burger.classList.remove('toggle');
+  })
 };
 
 navSlide();
